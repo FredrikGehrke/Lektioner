@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+.item {
+    background-color:#a0c7df;
+    border: 1px dotted #333;
+    padding: 1rem;
+}
+
+.container-flex {
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-grid {
+    margin: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#item-grid-1 {
+    justify-self: start;
+}
+
+#item-grid-2 {
+    justify-self: end;
+}

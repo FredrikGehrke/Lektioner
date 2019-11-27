@@ -1,0 +1,30 @@
+@import "../default.css";
+
+.container {
+    display: flex;
+}
+
+#primary-section, 
+#secondary-section {
+    flex: 1;
+}
+
+#primary-section {
+    display: flex;
+    order:2
+}
+
+#secondary-section {
+    display:flex;
+    flex-direction: column;
+    order:1;
+}
+
+.box {
+   flex: 1;
+   padding:20px;  
+}
+
+#primary-section .box:nth-child(1) { background-color:#8ab3c2; color:#f5fcff;}
+#secondary-section .box:nth-child(1) { background-color:#b5d5e2;}
+#secondary-section .box:nth-child(2) { background-color:#9ec8d8;}

@@ -1,0 +1,406 @@
+:root {
+    --dark: rgb(45, 102, 134);
+    --primary: rgb(60, 136, 181);
+    --light: rgb(181, 214, 236);
+    --lighter: rgb(232, 239, 247);    
+} 
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:#3a3a3a;  
+}
+
+a, 
+a:visited {
+    color: var(--primary);
+    text-decoration: none; 
+}
+
+a:hover {
+    color: var(--dark);
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;   
+}
+
+
+/* background colors */
+.bg-lighter { 
+    background-color: var(--lighter); 
+    color: var(--primary);
+}
+.bg-light   { 
+    background-color: var(--light); 
+    color: var(--dark);
+}
+.bg-primary { 
+    background-color: var(--primary); 
+    color: var(--lighter);
+}
+.bg-dark    { 
+    background-color: var(--dark); 
+    color: var(--lighter);
+}
+
+/* text colors */
+.text-lighter { color: var(--lighter) !important; }
+.text-light { color: var(--light) !important; }
+.text-primary { color: var(--primary) !important; }
+.text-dark { color: var(--dark) !important;}
+
+/* buttons */
+.btn { 
+    padding: 0.35rem 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .95em;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.btn:hover {
+    box-shadow: 0 0 6px 2px #3a3a3a3a; 
+}
+
+.btn-primary { 
+    background-color: var(--primary);
+    color: var(--lighter);
+}
+.btn-primary:hover {
+    background-color: var(--dark); 
+}
+
+.btn-light { 
+    background-color: var(--light);
+    color: var(--dark);
+    border-color: var(--lighter);
+}
+.btn-light:hover {
+    background-color: var(--lighter);
+}
+
+.btn-lighter { 
+    background-color: var(--lighter);
+    color: var(--dark);
+    border-color: var(--dark);
+}
+.btn-dark { 
+    background-color: var(--dark);
+    color: var(--lighter);
+}
+.btn-transparent {
+    background-color: transparent;
+    color: var(--dark);
+    border-color: var(--dark);   
+}
+
+
+/* helper classes */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+
+
+/* START CSS NAVBAR */
+.navbar {
+    padding: 1rem 0;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    font-size: 0.85em;
+    font-weight: 700;
+    margin: 0 1em;
+}
+
+.nav-item:last-child {
+    margin-left: 6rem
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item i {
+    margin-right: 0.5rem;
+    font-size: 1.5em;
+}
+/* END CSS NAVBAR */
+
+
+/* START CSS LOGOTYPE BRANDING */
+#brand {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+#brand .brand-border {
+    font-weight: 300;
+    border: 0.02em dotted;
+    padding: 0 0.2em;
+    position: relative;
+    
+}
+#brand .brand-bold {
+    font-weight: 700;
+    margin-left: 0.2em;
+}
+
+#brand .corner-box {
+    background-color: var(--primary);
+    width: 0.20em;
+    height: 0.20em;
+    position: absolute;
+}
+
+#brand .t { top: -0.11em; }
+#brand .r { right: -0.11em; }
+#brand .b { bottom: -0.11em; }
+#brand .l { left: -0.11em; }
+/* END CSS LOGOTYPE BRANDING */
+
+/* START CSS CAMPAIGN SECTION */
+#campaign {
+    padding: 3rem 0 0 0;
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+    border-bottom: 2px solid var(--lighter);
+}
+
+#campaign h1 {
+    font-size:2.8rem;
+}
+
+#campaign p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#campaign img {
+    margin-top: 3rem;
+}
+/* END CSS CAMPAIGN SECTION */
+
+
+/* START CSS JUMBOTRON SECTION */
+#jumbotron {
+    padding: 4em 15em;
+    border-bottom: 1px solid var(--lighter);
+}
+
+#jumbotron h2 {
+    flex: 1;
+    text-align: right;
+    margin-right: 1em;
+}
+
+#jumbotron p {
+    flex: 2;
+    font-size: 0.80em;
+}
+/* END CSS JUMBOTRON SECTION */
+
+
+/* START CSS HOW IT WORKS SECTION */
+#howitworks {
+    border-bottom: 1px solid var(--lighter);
+}
+
+#howitworks h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 4rem 0;
+}
+
+#howitworks img {
+    border: 2px solid var(--primary);
+}
+
+#howitworks-steps {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    margin: 5rem 6rem;
+}
+
+#howitworks-steps .arrow {
+    margin: 2rem 0;
+}
+
+#howitworks-steps .step i {
+    font-size: 4.2em;
+}
+
+#howitworks-steps .title {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#howitworks-steps .text {
+    font-size: 0.80em;
+    margin: 1em 0;
+}
+/* END CSS HOW IT WORKS SECTION */
+
+/* START BENEFITS SECTION  */
+#benefits {
+    border-bottom: 1px solid var(--lighter);
+}
+
+#benefits h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 4rem 0;
+}   
+
+#benefits-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    margin: 5rem 6rem;
+}
+
+#benefits1 {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+#benefits2 {
+    font-size: 5rem;
+    border: 1px solid var(--primary);
+    padding: 20px;
+}
+
+#benefits3 {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 36px;
+}
+
+.text {
+    font-weight: 600;
+}
+/* END BENEFITS SECTION  */
+
+/* START FEATURES SECTION */
+
+#features h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 4rem 0;
+}   
+
+#feature-grid {
+    display: grid;
+    margin: 5rem 6rem;
+    margin-left: 18rem;
+    width: 70%;
+    grid-template-columns: 2fr 2fr;
+    gap: 3rem;
+    /* justify-content: space-between; */
+}
+
+#feature {
+    text-align: left;
+    padding: 20px;
+}
+
+#featuresimg i {
+    font-size: 2.5rem;
+    float: left;
+    margin-bottom: 3rem;
+    padding-right: 1rem;
+}
+
+#feature-grid .title {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#sideImg {
+    display: flex;
+    float: right;
+}
+
+/* END FEATURES SECTION */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 576px) {
+    .container { max-width: 540px; }
+}
+
+@media(min-width: 768px) {
+    .container { max-width: 720px; }
+}
+
+@media(min-width: 992px) {
+    .container { max-width: 960px; }
+}
+
+@media(min-width: 1200px) {
+    .container { max-width: 1140px; }
+}

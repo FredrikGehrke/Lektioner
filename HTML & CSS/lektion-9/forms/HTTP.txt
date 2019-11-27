@@ -1,0 +1,38 @@
+HTTP POST
+Skicka information genom att använda ett paket (body).
+Ska användas när man har känslig information. Används
+när man skapar eller registrerar nått.
+
+HTTP GET
+Skickar/hämtar information genom att använda URL:en.
+Används när du vill hämta information och söka efter saker.
+
+HTTP PUT
+När man vill uppdatera ett helt objekt så används put. 
+Informationen finns i bodyn och objektets id finns i urlen.
+
+HTTP PATCH
+När man vill uppdatera ett helt objekt eller delar av ett
+objekt så används patch. Informationen finns i bodyn 
+och objektets id finns i urlen.
+
+HTTP DELETE
+ta bort ett objekt genom att använda sig av ett id i Url:en.
+
+
+
+
+Lägga till en användare
+POST https://epndata.com/api/users/create
+
+Hämta alla användare
+GET https://epndata.com/api/users/
+
+Hämta en användare med user id
+GET https://epndata.com/api/users/1231211
+
+Uppdatera en användare med user id
+PUT https://epndata.com/api/users/1231211
+
+Ta bort en användare med user id
+DELETE https://epndata.com/api/users/1231211

@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #333;
+}
+
+.container {
+    display:flex;
+    height: 100vh;
+}
+
+
+.box {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border: 2px solid rgb(255, 0, 34);
+
+    /* transition: property duration delay timing-functon; */
+    /* 
+    transition-property: background, border, border-radius;
+    transition-duration: 2s, 5s, 1s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out; 
+    */
+
+    transition: all 2s ease-in-out;
+
+}
+
+.box:hover {
+    background: brown;
+    border: 2px solid yellow;
+    border-radius: 50%;
+
+
+}

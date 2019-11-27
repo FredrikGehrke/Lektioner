@@ -1,0 +1,58 @@
+:root {
+    --dark: rgb(45, 102, 134);
+    --primary: rgb(60, 136, 181);
+    --light: rgb(181, 214, 236);
+    --lighter: rgb(232, 239, 247);    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 60vh;
+    
+}
+
+.container {
+    margin: auto;
+    
+}
+
+/* START CSS LOGOTYPE BRANDING */
+
+#brand {
+    display: flex;
+    color: var(--primary);
+    font-size: 4.5rem;
+}
+
+#brand .brand-border {
+    font-weight: 300;
+    border: 0.02em dotted;
+    padding: 0 0.2em;
+    position: relative;
+    
+}
+#brand .brand-bold {
+    font-weight: 700;
+    margin-left: 0.2em;
+}
+
+#brand .corner-box {
+    background-color: var(--primary);
+    width: 0.20em;
+    height: 0.20em;
+    position: absolute;
+}
+
+#brand .t { top: -0.11em; }
+#brand .r { right: -0.11em; }
+#brand .b { bottom: -0.11em; }
+#brand .l { left: -0.11em; }
+
+/* END CSS LOGOTYPE BRANDING */

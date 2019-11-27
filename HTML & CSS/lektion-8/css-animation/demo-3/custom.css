@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #00c6ff;
+    background: linear-gradient(to left, #00c6ff, #0072ff);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display:flex;
+    height: 100vh;
+}
+
+.cube-wrapper {
+    margin: auto;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.cube-wrapper::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+
+
+    bottom: -40px;
+    margin: auto;
+    width: 90px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+    filter: blur(2px);
+    border-radius: 100%;
+    animation: shadow 0.5s ease infinite alternate;
+}
+
+.cube-wrapper .loading {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color:#fff;
+    animation: loadingText 0.5s ease infinite alternate;
+    position: relative;
+    top: 25px;
+    z-index: 2;
+   
+   
+    display: block;
+}
+
+.cube-folding {
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    
+    
+    font-size: 0;
+}
+
+.cube-folding span {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    transform: scale(1.1);
+
+    
+    display: inline-block;
+
+}
+.cube-folding span::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    transform-origin: 100% 100%;
+    animation: folding 2.5s infinite linear both;
+
+    
+    display:block;
+}
+
+.cube-folding .box2 {
+    transform: rotateZ(90deg) scale(1.1);
+}
+.cube-folding .box2::before {
+    animation-delay: 0.3s;
+    background-color:#f2f2f2;
+}
+
+.cube-folding .box3 {
+    transform: rotateZ(270deg) scale(1.1);
+}
+.cube-folding .box3::before {
+    animation-delay: 0.9s;
+    background-color:#f2f2f2;
+}
+
+.cube-folding .box4 {
+    transform: rotateZ(180deg) scale(1.1);
+}
+.cube-folding .box4::before {
+    animation-delay: 0.6s;
+    background-color:#e6e6e6;
+}
+
+
+
+@keyframes folding {
+    0%, 10% {
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%, 75% {
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%, 100% {
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes loadingText {
+    100% { top: 35px; }
+}
+
+
+
+
+
+
+
+
+@keyframes shadow {
+    100% {
+        bottom: -38px;
+        width: 80px;
+    }
+}

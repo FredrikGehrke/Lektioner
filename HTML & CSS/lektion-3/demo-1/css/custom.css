@@ -1,0 +1,85 @@
+:root {
+  --livingCoral: #ff6f61;
+  --livingCoral-dark: #d36359;
+  --livingCoral-white: #f0f0f0;
+  --livingCoral-gray: #4e4747;
+  --livingCoral-lightgray: #8b8585;
+}
+
+.text-livingCoral-white {
+  color: var(--livingCoral-white);
+}
+
+.text-livingCoral-dark {
+  color: var(--livingCoral-dark);
+}
+
+.text-livingCoral {
+  color: var(--livingCoral);
+  text-shadow: 1px 1px 5px #807f7f;
+}
+
+.text-livingCoral-gray {
+  color: var(--livingCoral-gray);
+}
+
+.text-livingCoral-lightgray {
+  color: var(--livingCoral-lightgray);
+}
+
+
+
+
+body {
+  background-color: var(--livingCoral-white);
+}
+
+a {
+  color: var(--livingCoral);
+}
+
+a:hover {
+  color: var(--livingCoral-dark);
+}
+
+
+.bg-livingCoral-white {
+  background-color: var(--livingCoral-white) !important;
+}
+
+a.bg-livingCoral-white:hover, a.bg-livingCoral-white:focus,
+button.bg-livingCoral-white:hover,
+button.bg-livingCoral-white:focus {
+  background-color: var(--livingCoral-white) !important;
+}
+
+
+
+.bg-livingCoral {
+  background-color: var(--livingCoral) !important;
+}
+
+a.bg-livingCoral:hover, a.bg-livingCoral:focus,
+button.bg-livingCoral:hover,
+button.bg-livingCoral:focus {
+  background-color: var(--livingCoral-dark) !important;
+}
+
+.logo {
+  font-size: 3rem; 
+
+}
+
+#navbarText .navbar-nav .nav-item a {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+footer {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+footer strong {
+  font-weight: 600;
+}

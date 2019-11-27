@@ -1,0 +1,15 @@
+@import "../default.css";
+
+body {
+    padding:0;
+}
+
+.container-center {
+    height: 100vh;
+    display: flex;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}

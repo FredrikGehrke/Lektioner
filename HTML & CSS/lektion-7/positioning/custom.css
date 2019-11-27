@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    border: 1px dotted #333;
+
+
+}
+
+.child {
+    background-color:#5e8ab3;
+    height: 50px;
+    width: 50px;
+}
+
+#first-parent {
+    margin: 30px;
+    padding: 40px;
+    position: relative;
+}
+
+#first-child {
+    
+}
+
+#second-parent {
+    
+}
+
+#second-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}

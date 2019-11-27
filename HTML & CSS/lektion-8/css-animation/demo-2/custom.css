@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #fff;
+}
+
+.container {
+    display:flex;
+    height: 100vh;
+}
+
+svg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform:  translate(-50%, -50%) rotate(45deg) scale(.5);
+    -moz-transform:     translate(-50%, -50%) rotate(45deg) scale(.5);
+    transform:          translate(-50%, -50%) rotate(45deg) scale(.2);
+}
+
+.stroke-still {
+    stroke: #e2e2e2;
+    stroke-width: 20px;
+}
+
+.stroke-animation {
+    animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    transform-origin: center center;
+
+    stroke-width: 20px;
+
+}
+
+@keyframes stroke-spacing {
+    0% {
+        stroke-dasharray: 0 200;
+    }
+    45% {
+        stroke-dasharray: 200 200;
+        stroke-dashoffset: 0;
+    }
+    90% {
+        stroke-dasharray: 200 200; 
+        stroke-dashoffset: -200; 
+    }
+    100% {
+        stroke-dasharray: 200 200;
+        stroke-dashoffset: -200;
+    }
+}
+@keyframes stroke-color {
+    0%  { stroke: #9ad7ff; }
+    24% { stroke: #ff9f9f; }
+    25% { stroke: #bbffec; }
+    49% { stroke: #67ffd4; }
+    50% { stroke: #b7b7ff; }
+    74% { stroke: #7b7bff; }
+    75% { stroke: #ffc3e5; }
+    99% { stroke: #ff89cc; }
+}

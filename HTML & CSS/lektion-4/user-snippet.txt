@@ -1,0 +1,35 @@
+{
+	// File -> Preferences -> User Snippets -> html.json
+    //Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	//description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	//$1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	//same ids are connected.
+
+	"HTML5 and Bootstrap 4.3.1": {
+		"prefix": "HTML5 & Bootstrap",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"sv-SE\">",
+			"<head>",
+			"    <meta charset=\"utf-8\">",
+			"    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1, shrink-to-fit=no\">",
+			"    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
+			"    <title>$1</title>",
+			"",
+			"    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">",
+			"    <link rel=\"stylesheet\" href=\"css/custom.css\">",
+			"</head>",
+			"<body>",
+			"    <div class=\"$2\">",
+			"        $0",		
+			"    </div>",
+			"",
+			"    <script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>",
+			"    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>",
+			"    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>",
+			"</body>",
+			"</html>"			
+		],
+		"description": "HTML5 boilerplate with bootstrap 4 CDN"
+	}
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Example</title>
+
+    <script src="https://kit.fontawesome.com/dac173a22a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">Tillbaka</a>
+        
+        <div id="results"></div>
+    
+        <script>
+            
+            const results = document.getElementById('results');
+            new URLSearchParams(window.location.search).forEach((value, name) => {
+                results.append(`${name}: ${value}`);
+                results.append(document.createElement('br'));
+            })
+
+        </script>
+    </div>
+</body>
+</html>
